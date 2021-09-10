@@ -96,4 +96,4 @@ props is basically a global variable/object that is used to pass information fro
 
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
  
-side effects is anything that affects something outside of the current function scope. such as requesting data from an API, manipulating the DOM and other things. side effects are usually manipulated by using {useEffect}.
+side effects is anything that affects something outside of the current function scope. such as requesting data from an API, manipulating the DOM and other things. side effects are usually manipulated by using {useEffect}
