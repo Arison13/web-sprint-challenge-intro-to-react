@@ -18,7 +18,8 @@ background: url('https://mcdn.wallpapersafari.com/medium/81/95/Z7D2q6.jpg');
 `
 const CharacterDiv = styled.div `
     margin: 20px;
-    text-shadow: 0px 1px yellow;
+    // text-shadow: 0px 1px white;
+    color: yellow;
     border:1px solid green;
     padding:0px 25px;
     width:100%;
@@ -28,7 +29,6 @@ const CharacterDiv = styled.div `
 `
 const DetailsSpan = styled.span `
    color: purple;
-   background-color:gray;
    text-shadow:0px 1px black;
 `
 const Character = props => {
@@ -38,7 +38,7 @@ const Character = props => {
             props.characters !== null ? 
                 props.characters.map((item, index) => {
                 return <div>
-                            <CharacterDiv key={index}> {item.name} 
+                            <CharacterDiv key={index}> {item.name}
                                 <DetailsSpan>{item.birth_year}</DetailsSpan> 
                             </CharacterDiv>
                         </div>})  
